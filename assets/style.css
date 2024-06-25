@@ -39,7 +39,7 @@ body {
 }
 
 .social-link img {
-	width: 20px;
+	width: 30px;
 }
 
 #about {
@@ -242,6 +242,23 @@ form textarea {
 input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
+}
+
+footer {
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-inline: 100px;
+	padding-block: 30px;
+	align-items: center;
+	align-content: center;
+	
+}
+
+.coordonates {
+
+	font-size: 20px;
 }
 
 @media all and (max-width: 1180px) {
