@@ -6,6 +6,32 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
+
+/* pics generic style */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* pics media queries consistent with html */
+@media (max-width: 600px) {
+    .image-class {
+        width: 480px;
+    }
+}
+
+@media (max-width: 900px) {
+    .image-class {
+        width: 800px;
+    }
+}
+
+@media (min-width: 901px) {
+    .image-class {
+        width: 1200px;
+    }
+}
+
 .top-header {
 	background-color: white;
 	position: sticky;
