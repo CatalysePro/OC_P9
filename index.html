@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<!-- Title tag -->
     <title>Nina Carducci - Photographe Freelance | Portraits, Mariages, Événements</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +11,21 @@
     <!-- Preconnect to font domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Load fonts with font-display: swap to improve initial rendering -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 
-    <!-- critical Stylesheets -->
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/style.min.css">
+    <!-- Load fonts with font-display: swap to improve initial rendering -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"></noscript>
+
+	<!-- Online critical css -->
+    <style>
+        /* define & include critical extracts from bootstrap.min.css & style.min.css */
+    </style>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="./assets/style.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css"></noscript>
+    <noscript><link rel="stylesheet" href="./assets/style.min.css"></noscript>
 
     <!-- differed JavaScript  -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
@@ -57,7 +67,6 @@
 			]
 		}
 	</script>
-	<meta charset="UTF-8">
 </head>
 <body>
 <div class="top-header">
