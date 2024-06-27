@@ -8,26 +8,26 @@ body {
 }
 
 /* pics generic style */
-img {
+.carousel-item, .left, .right, .gallery-item {
     max-width: 100%;
     height: auto;
 }
 
 /* pics media queries consistent with html */
 @media (max-width: 600px) {
-    .image-class {
+    .carousel-item, .left, .right, .gallery-item {
         width: 480px;
     }
 }
 
 @media (max-width: 900px) {
-    .image-class {
+    .carousel-item, .left, .right, .gallery-item {
         width: 800px;
     }
 }
 
 @media (min-width: 901px) {
-    .image-class {
+    .carousel-item, .left, .right, .gallery-item {
         width: 1200px;
     }
 }
