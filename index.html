@@ -13,10 +13,11 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	<meta charset="UTF-8">
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script> <!-- min file present but not referenced - manual min modification done -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.min.js"></script> <!-- manual min modification done -->
-	<script src="./assets/scripts.min.js"></script> <!-- manual min modification done -->
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script> <!-- min file present but not referenced - manual min ref modification done -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
+	<!-- jquery file : minication already done -->
+	<script src="./assets/maugallery.min.js" defer></script> <!-- manual min ref modification done -->
+	<script src="./assets/scripts.min.js" defer></script> <!-- manual min ref modification done -->
 
 	<!--  JSON-LD for location rich snippets  -->
 	  <!--  serialization method with structered data JSON-LD : JavaScript Object Notation for Linked Data-->
@@ -75,16 +76,16 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100" alt="...">
+				<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100" alt="homme en costume noir vue de dos marchant sur un passage pieton d'une grande avenue" loading="lazy">
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100" alt="...">
+				<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100" alt="foule de jeunes gens souriant et bras levés assistant à un concert" loading="lazy">
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100" alt="...">
+				<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100" alt="couple de mariés s'embrassant lors d'une fête de mariage" loading="lazy">
 			</div>
 		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" loading="lazy">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			<span class="visually-hidden">Previous</span>
 		</button>
@@ -198,9 +199,9 @@
 	<h2 class="coordonates">12 rue de la Paix, 75001 Paris. Tel: 01 75 01 02 03</h2>
 	<div class="nav">   
 		<ul>
-			<li><a class="social-link" href="https://www.facebook.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/facebook.webp" alt=""></a></li>
-			<li><a class="social-link" href="https://www.twitter.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/twitter.webp" alt=""></a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.webp" alt=""></a></li>
+			<li><a class="social-link" href="https://www.facebook.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/facebook.svg" alt="logo facebook" loading="lazy"></a></li>
+			<li><a class="social-link" href="https://www.twitter.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/twitter.svg" alt="logo twitter" loading="lazy"></a></li>
+			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.svg" alt="logo instagram" loading="lazy"></a></li>
 		</ul>
 	</div>
 </footer>
