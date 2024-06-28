@@ -33,7 +33,7 @@ body {
     }
 }
 
-
+/** as back-up to style link in html head*/
   @font-face {
     font-family: 'Inter';
     font-display: swap;
@@ -140,11 +140,18 @@ body {
 .gallery .nav {
 	justify-content: center;
 }
+
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
+
+.tags-bar .nav-item .nav-link li:hover {
+	cursor: pointer; /*? additionnal style via console outer html */
+} /*! do not work */
+
 .nav-pills .nav-link {
 	color: #000
 }
@@ -284,6 +291,7 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
+/*? start additional style 2/2 */
 footer {
 	background-color: white;
 	display: flex;
@@ -300,6 +308,16 @@ footer {
 
 	font-size: 20px;
 }
+
+.social-link {
+
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+
+/*? end additional style 2/2 */
 
 @media all and (max-width: 1180px) {
 	.picture {
