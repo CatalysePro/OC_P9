@@ -7,6 +7,7 @@ body {
 	font-style: normal;
 }
 
+/*? start additionnal style */
 /* pics generic style */
 .carousel-item, .left, .right, .gallery-item {
     max-width: 100%;
@@ -31,6 +32,19 @@ body {
         width: 1200px;
     }
 }
+
+
+  @font-face {
+    font-family: 'Inter';
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Spectral';
+    font-display: swap;
+  }
+
+
+/*? end additional style */
 
 .top-header {
 	background-color: white;

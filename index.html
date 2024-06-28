@@ -15,24 +15,15 @@
 		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" as="style">
 		<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 
+		<!-- Priorize LCP (Large Contentful Paint) add attribute "as="image" for better reactivity-->
+		<link rel="preload" as="image" href="https://catalysepro.github.io/OC_P9/assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" imagesrcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-480w.webp 480w, …" imagesizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px">
+
+
 		<!-- style : add attribute "as="style" for better reactivity-->
 		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" as="style">
 		<link rel="stylesheet" href="./assets/style.min.css" as="style">
 
-		<!-- minify & defer scripts + 2nd line at the beginning with attributes rel="preload" & as="script" for better reactivity"-->
 		
-		<link rel="preload" href="./assets/bootstrap/bootstrap.bundle.min.js" as="script">
-		<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script> <!-- min file present but not referenced - manual min ref modification done -->
-		
-		<link rel="preload" href="https://code.jquery.com/jquery-3.4.1.min.js" as="script" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
-		<!-- jquery file : minication already done -->
-		
-		<link rel="preload" href="./assets/maugallery.min.js" as="script">
-		<script src="./assets/maugallery.min.js" defer></script> <!-- manual min ref modification done -->
-		
-		<link rel="preload" href="./assets/scripts.min.js" as="script">
-		<script src="./assets/scripts.min.js" defer></script> <!-- manual min ref modification done -->
 	
 		<!--  JSON-LD for location rich snippets  -->
 		  <!--  serialization method with structered data JSON-LD : JavaScript Object Notation for Linked Data-->
@@ -100,7 +91,7 @@
 							./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-800w.webp 800w, 
 							./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1200w.webp 1200w" 
 					sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px" 
-					 
+					width="100%" height="auto"
 					class="d-block w-100" 
 					alt="homme en costume noir sur un passage pieton d une grande avenue" 
 					loading="lazy"
@@ -113,6 +104,7 @@
 					./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-800w.webp 800w, 
 					./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1200w.webp 1200w"  
 					sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px" 
+					width="100%" height="auto"
 					class="d-block w-100" alt="foule de jeunes gens souriant et bras levés assistant à un concert" 
 					loading="lazy"
 				>
@@ -124,6 +116,7 @@
 						./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-800w.webp 800w, 
 						./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1200w.webp 1200w"  
 					sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px" 
+					width="100%" height="auto"
 					class="d-block w-100" 
 					alt="couple de mariés s'embrassant lors d'une fête de mariage" 
 					loading="lazy"
@@ -150,7 +143,7 @@
 			sizes="(max-width: 600px) 480px, 
 					(max-width: 900px) 800px, 
 					1200px"
-			
+			width="100%" height="auto"
 			alt="Nina Carducci" 
 			loading="lazy"
 		>
@@ -167,6 +160,7 @@
 	<h3 class="title">Portfolio</h3>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
+			<!-- see preaload of this pic in the head -- therefore no need of attribute loading:"lazy"-->
 			<img 
 				data-gallery-tag="Concert" 
 				class="gallery-item" 
@@ -282,7 +276,7 @@
 			./assets/images/camera-800w.webp 800w, 
 			./assets/images/camera-1200w.webp 1200w" 
 			sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px"
-			
+			width="100%" height="auto"
 			alt="appareil photo fin années 80"
 			loading="lazy"
 			>
@@ -303,5 +297,20 @@
 		</ul>
 	</div>
 </footer>
+	<!-- NON CRITICAL SCRIPTS -->
+	<!-- minify & defer scripts + 2nd line at the beginning with attributes rel="preload" & as="script" for better reactivity"-->
+			
+	<link rel="preload" href="./assets/bootstrap/bootstrap.bundle.min.js" as="script">
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script> <!-- min file present but not referenced - manual min ref modification done -->
+
+	<link rel="preload" href="https://code.jquery.com/jquery-3.4.1.min.js" as="script" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
+	<!-- jquery file : minication already done -->
+
+	<link rel="preload" href="./assets/maugallery.min.js" as="script">
+	<script src="./assets/maugallery.min.js" defer></script> <!-- manual min ref modification done -->
+
+	<link rel="preload" href="./assets/scripts.min.js" as="script">
+	<script src="./assets/scripts.min.js" defer></script> <!-- manual min ref modification done -->
 </body>
 </html>
