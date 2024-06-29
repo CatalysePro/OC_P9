@@ -31,9 +31,28 @@
 		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" as="style">
 		<link rel="stylesheet" href="./assets/style.min.css" as="style">
 
-		
+		<!-- Twitter Card data : Chosen type Summary Card with Large Image  -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@ninacarducci">
+		<meta name="twitter:title" content="Nina Carducci - Photographe Freelance | Portraits, Mariages, Événements">
+		<meta name="twitter:description" content="Nina Carducci photographe de talent et abordable, capture vos moments uniques avec passion et créativité. Séances photo personnalisées pour tous vos événements.">
+		<meta name="twitter:image" content="http://www.ninacarducci.com/assets/images/featured-image.webp">
+		<meta name="twitter:image:alt" content="Photo prise par Nina Carducci">
 	
-		<!--  JSON-LD for location rich snippets  -->
+		<!-- Open Graph data : standard protocole shared by facebook/instagram, linkedin and others-->
+		<meta property="og:title" content="Nina Carducci - Photographe Freelance | Portraits, Mariages, Événements">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="http://www.ninacarducci.com">
+		<meta property="og:image" content="http://www.ninacarducci.com/assets/images/featured-image.webp">
+		<meta property="og:image:alt" content="Photo prise par Nina Carducci">
+		<meta property="og:description" content="Nina Carducci photographe de talent et abordable, capture vos moments uniques avec passion et créativité. Séances photo personnalisées pour tous vos événements.">
+		<meta property="og:site_name" content="Nina Carducci Photographe">
+		<meta property="og:locale" content="fr_FR">
+		<meta property="og:image:type" content="image/webp">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="630">
+	
+		<!--  JSON-LD for rich snippets : contact, physical ,location, business info and social networks  -->
 		  <!--  serialization method with structered data JSON-LD : JavaScript Object Notation for Linked Data-->
 		<script type="application/ld+json"> 
 			{
@@ -92,6 +111,7 @@
 			<div class="carousel-item active">
 				<!--same structure for all images except logo svg / original images are kept in the project and the paths are commented-->
 				
+				<!-- see preaload of this pic in the head -- therefore no need of attribute loading:"lazy"-->
 				<!-- <img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100" alt="homme en costume noir sur un passage pieton d'une grande avenue" loading="lazy"> -->
 				<img 
 					src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" 
@@ -168,7 +188,6 @@
 	<h3 class="title">Portfolio</h3>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
-			<!-- see preaload of this pic in the head -- therefore no need of attribute loading:"lazy"-->
 			<img 
 				data-gallery-tag="Concert" 
 				class="gallery-item" 
@@ -181,7 +200,7 @@
 						1200px"
 				width="1200" height="800" 
 				alt="mains levées dans un concert" 
-				
+				loading="lazy"
 			>
 			<!-- <img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"/> -->
 			
@@ -191,8 +210,9 @@
 			srcset="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-480w.webp 480w, 
 			./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-800w.webp 800w, 
 			./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-1200w.webp 1200w" 
+			sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px" 
 			width="1200" height="800" 
-			sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px" alt="homme en costume" 
+			alt="homme en costume" 
 			loading="lazy">
 			<!-- <img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"/> -->
 
