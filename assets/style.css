@@ -109,8 +109,21 @@ body {
 
 .picture img {
 	width: 100%;
+	
+}
+
+#about-me img {
+
+	/*? additional style hereunder*/
+	display: block;  /* Avoid white margin with online img */
+    max-width: 100%;  /* insure that img won't overstep its container */
+    height: auto;  /* Maintain img ratio  */
+	position: absolute; 
+	top: 0; 
+	left: 0;
 
 }
+
 #about-me {
 	flex: 2
 }
