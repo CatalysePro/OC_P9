@@ -129,12 +129,18 @@ body {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
-	width: 60%;
-	font-size: 1rem; /*? additionnal style - done on the min version */
+	width: 80%; /* ? vs 60%*/
+	font-size: 1.2rem; /* ? vs 1 rem*/
+	/*? additionnal style - done on the min version */
+	text-align: justify;
+  	text-justify: inter-word;
 }
 #about-me p {
 	width: 80%;
 	font-size: 14px;
+	/*? additionnal style - done on the min version */
+	text-align: justify;
+  	text-justify: inter-word;
 }
 
 #gallery {
