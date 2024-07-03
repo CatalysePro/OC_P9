@@ -131,16 +131,16 @@ body {
 	font-style: italic;
 	width: 80%; /* ? vs 60%*/
 	font-size: 1.2rem; /* ? vs 1 rem*/
-	/*? additionnal style - done on the min version */
-	text-align: justify;
-  	text-justify: inter-word;
+	/*? additionnal style - done on the min version TO BE CANCELED IMPACT WAVE REPORT EVEN IF BETTER STYLE*/
+	/* text-align: justify;
+  	text-justify: inter-word; */
 }
 #about-me p {
 	width: 80%;
 	font-size: 14px;
-	/*? additionnal style - done on the min version */
-	text-align: justify;
-  	text-justify: inter-word;
+	/*? additionnal style - done on the min version  TO BE CANCELED IMPACT WAVE REPORT EVEN IF BETTER STYLE */
+	/* text-align: justify;
+  	text-justify: inter-word; */
 }
 
 #gallery {
