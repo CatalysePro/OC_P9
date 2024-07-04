@@ -29,13 +29,17 @@
 		<link rel="preload" href="https://fonts.gstatic.com/s/spectral/v11/rnCu-xNNwF.woff2" as="style"> -->
 		
 		
+
+		<!-- Link to stylesheet containing font definitions use "rel=preload"  + add attribute "as="style" in a separate line  for better reactivity -->
 		
+		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" as="style">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap">
+		
+		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" as="style">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap">
 
-		<!-- Link to stylesheet containing font definitions -->
-		<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 		<!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"> -->
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-
+		
 		<!-- Priorize LCP (Large Contentful Paint) for 1st slider's pic / add attribute "as="image" for better reactivity-->
 		<link rel="preload" as="image" 
 			href="https://catalysepro.github.io/OC_P9/assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" 
@@ -47,7 +51,7 @@
 			imagesizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px"	
 		>
 
-		<!-- style : use "rel=prelaod"  + add attribute "as="style" in a separate line  for better reactivity-->
+		<!-- style : use "rel=preload"  + add attribute "as="style" in a separate line  for better reactivity-->
 		<!-- /!\ BOOTSTRAP 1ST-->
 		
 		<link rel="preload" href="./assets/bootstrap/bootstrap.min.css" as="style">
@@ -138,7 +142,7 @@
 			<div class="carousel-item active">
 				<!--same structure for all images except logo svg / original images are kept in the project and the paths are commented-->
 				
-				<!-- see preaload of this pic in the head -- therefore no need of attribute loading:"lazy"-->
+				<!-- see preload of this pic in the head -- therefore no need of attribute loading:"lazy"-->
 				
 				<img 
 					src="https://catalysepro.github.io/OC_P9//assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" 
