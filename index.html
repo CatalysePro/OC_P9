@@ -15,31 +15,10 @@
 		<!-- preconnect to font domains already in place-->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		
-		<!-- ERASE AS A TEST AND REPALCE BY THE 2 FOLLOWING PARAGRAPHS -->
 		<!-- add 2nd line at the beginning with attribute rel="preload" to font download + with attribute "as="style" for better reactivity-->
-		<!-- <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" as="style">
-		<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet"> -->
-
-		
-		
-		<!-- Preload specific font files -->
-		<!-- <link rel="preload" href="https://fonts.gstatic.com/s/inter/v3/UcCO3FwrK2A.woff2" as="style">
-		<link rel="preload" href="https://fonts.gstatic.com/s/spectral/v11/rnCr-xNNwF.woff2" as="style">
-		<link rel="preload" href="https://fonts.gstatic.com/s/spectral/v11/rnCu-xNNwF.woff2" as="style"> -->
-		
-		
-
-		<!-- Link to stylesheet containing font definitions use "rel=preload"  + add attribute "as="style" in a separate line  for better reactivity -->
-		
 		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" as="style">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap">
-		
-		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" as="style">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap">
+		<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 
-		<!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"> -->
-		
 		<!-- Priorize LCP (Large Contentful Paint) for 1st slider's pic / add attribute "as="image" for better reactivity-->
 		<link rel="preload" as="image" 
 			href="https://catalysepro.github.io/OC_P9/assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" 
@@ -48,19 +27,13 @@
 			https://catalysepro.github.io/OC_P9/assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-800w.webp 800w,
 			https://catalysepro.github.io/OC_P9/assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1200w.webp 1200w
 			" 
-			imagesizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px"	
+			imagesizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px"
 		>
 
-		<!-- style : use "rel=preload"  + add attribute "as="style" in a separate line  for better reactivity-->
-		<!-- /!\ BOOTSTRAP 1ST-->
-		
-		<link rel="preload" href="./assets/bootstrap/bootstrap.min.css" as="style">
-		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+		<!-- style : add attribute "as="style" for better reactivity-->
+		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" as="style">
+		<link rel="stylesheet" href="./assets/style.min.css" as="style">
 
-		<link rel="preload" href="./assets/style.min.css" as="style">
-		<link rel="stylesheet" href="./assets/style.min.css">
-		
-	
 
 		<!-- Twitter Card data : Chosen type :  Summary Card with Large Image  -->
 		<meta name="twitter:card" content="summary_large_image">
@@ -142,13 +115,13 @@
 			<div class="carousel-item active">
 				<!--same structure for all images except logo svg / original images are kept in the project and the paths are commented-->
 				
-				<!-- see preload of this pic in the head -- therefore no need of attribute loading:"lazy"-->
+				<!-- see preaload of this pic in the head -- therefore no need of attribute loading:"lazy"-->
 				
 				<img 
-					src="https://catalysepro.github.io/OC_P9//assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" 
-					srcset="https://catalysepro.github.io/OC_P9//assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-480w.webp 480w, 
-							https://catalysepro.github.io/OC_P9//assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-800w.webp 800w, 
-							https://catalysepro.github.io/OC_P9//assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1200w.webp 1200w" 
+					src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" 
+					srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-480w.webp 480w, 
+							./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-800w.webp 800w, 
+							./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1200w.webp 1200w" 
 					sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px" 
 					width="100%" height="auto"
 					class="d-block w-100" 
