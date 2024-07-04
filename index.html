@@ -30,9 +30,14 @@
 			imagesizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px"
 		>
 
-		<!-- style : add attribute "as="style" for better reactivity-->
-		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" as="style">
-		<link rel="stylesheet" href="./assets/style.min.css" as="style">
+		<!-- style : use "rel=preload"  + add attribute "as="style" in a separate line  for better reactivity-->
+		<!-- /!\ BOOTSTRAP 1ST-->
+		
+		<link rel="preload" href="./assets/bootstrap/bootstrap.min.css" as="style">
+		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+
+		<link rel="preload" href="./assets/style.min.css" as="style">
+		<link rel="stylesheet" href="./assets/style.min.css">
 
 
 		<!-- Twitter Card data : Chosen type :  Summary Card with Large Image  -->
