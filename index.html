@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Title tag-->
-		<title>Nina Carducci - Photographe à Bordeaux | Portraits, Mariages, Événements</title>
+		<title>Nina Carducci - Photographe Freelance | Portraits, Mariages, Événements</title>
 		
 		<!-- insert favicon code here under / for full customized favicon use use https://realfavicongenerator.net/ -->
 		<link rel="icon" href="https://catalysepro.github.io/OC_P9/assets/images/icon-camera.svg" type="image/svg+xml">
@@ -15,7 +15,7 @@
 		<!-- preconnect to font domains already in place-->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<!-- add 2nd line at the beginning with attribute rel="preload" to font download + with attribute "as="style" for better reactivity-->
+		<!-- add rel="preload" to font download + 2nd line at the beginning with attributes rel="preload" & "as="style" for better reactivity-->
 		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" as="style">
 		<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 
@@ -30,14 +30,9 @@
 			imagesizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px"
 		>
 
-		<!-- style : use "rel=preload"  + add attribute "as="style" in a separate line  for better reactivity-->
-		<!-- /!\ BOOTSTRAP 1ST-->
-		
-		<link rel="preload" href="./assets/bootstrap/bootstrap.min.css" as="style">
-		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-
-		<link rel="preload" href="./assets/style.min.css" as="style">
-		<link rel="stylesheet" href="./assets/style.min.css">
+		<!-- style : add attribute "as="style" for better reactivity-->
+		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" as="style">
+		<link rel="stylesheet" href="./assets/style.min.css" as="style">
 
 
 		<!-- Twitter Card data : Chosen type :  Summary Card with Large Image  -->
@@ -61,7 +56,7 @@
 		<meta property="og:image:width" content="1200">
 		<meta property="og:image:height" content="630">
 	
-		<!--  JSON-LD for rich snippets : micro-data for contact, physical ,location, business info and social networks  -->
+		<!--  JSON-LD for rich snippets : contact, physical ,location, business info and social networks  -->
 		  <!--  serialization method with structered data JSON-LD : JavaScript Object Notation for Linked Data-->
 		<script type="application/ld+json"> 
 			{
@@ -69,23 +64,23 @@
 			  "@type": "LocalBusiness",
 			  "name": "Nina Carducci",
 			  "image": "http://www.ninacarducci.com/assets/images/logo.webp",
-			  "telephone": "+33556677889",
+			  "telephone": "+33175010203",
 			  "email": "contact@ninacarducci.com",
 			  "address": {
 				"@type": "PostalAddress",
-				"streetAddress": "68 avenue Alsace-Lorraine, 33200 Bordeaux",
-				"addressLocality": "Bordeaux",
-				"addressRegion": "Aquitaine",
-				"postalCode": "33200",
+				"streetAddress": "12 Rue de la Paix",
+				"addressLocality": "Paris",
+				"addressRegion": "Ile de France",
+				"postalCode": "75001",
 				"addressCountry": "FR"
 			  },
 			  "url": "http://www.ninacarducci.com",
 			  "geo": {
 				"@type": "GeoCoordinates",
-				"latitude": "44.84680",
-				"longitude": "-0.60716"
+				"latitude": "48.52531",
+				"longitude": "2.193123"
 			  },
-			  "openingHours": "Mo-Fr 10:00-19:00",
+			  "openingHours": "Mo-Fr 09:00-18:00",
 			  "priceRange": "€",
 			  "sameAs": [
 					"http://www.facebook.com/ninacarducci",
@@ -121,7 +116,7 @@
 				<!--same structure for all images except logo svg / original images are kept in the project and the paths are commented-->
 				
 				<!-- see preaload of this pic in the head -- therefore no need of attribute loading:"lazy"-->
-				
+				<!-- <img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100" alt="homme en costume noir sur un passage pieton d'une grande avenue" loading="lazy"> -->
 				<img 
 					src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" 
 					srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-480w.webp 480w, 
@@ -135,7 +130,7 @@
 				>
 			</div>
 			<div class="carousel-item">
-				
+				<!-- <img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100" alt="foule de jeunes gens souriant et bras levés assistant à un concert" loading="lazy"> -->
 				<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" 
 					srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-480w.webp 480w, 
 					./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-800w.webp 800w, 
@@ -147,7 +142,7 @@
 				>
 			</div>
 			<div class="carousel-item">
-				
+				<!-- <img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100" alt="couple de mariés s'embrassant lors d'une fête de mariage" loading="lazy"> -->
 				<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" 
 					srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-480w.webp 480w, 
 						./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-800w.webp 800w, 
@@ -184,16 +179,14 @@
 			alt="Nina Carducci" 
 			loading="lazy"
 		>
-		
+		<!-- <img src="./assets/images/nina.webp"> -->
 	</div>
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
 		<h3 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h3>
 		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
-			<strong>C’est ce que je vous propose :</strong> saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
-			<p>Bien que mes tarifs soient très compétitifs, je suis consciente de l'impact que peut représenter le budget demandé sur les finances de certaines personnes. Qu'elles se rassurent, il n'y a que des solutions quand il s'agit de bonheur.
-				<strong>C’est ce que je vous propose :</strong> Faire preuve de flexibilité dans la mesure du raisonnaible pour étudier avec vous la meilleure formule en termes de prestations et/ou de facilité de paiement. Parlons nous de vive voix avant de satisfaire vos yeux...</p>
-		</div>
+			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
+	</div>
 </div>
 <div id="gallery">
 	<h2 class="title">Portfolio</h2>
@@ -213,7 +206,7 @@
 				alt="mains levées dans un concert" 
 				loading="lazy"
 			>
-			
+			<!-- <img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"/> -->
 			
 			<img data-gallery-tag="Entreprises" 
 			class="gallery-item" 
@@ -225,7 +218,7 @@
 			width="1200" height="800" 
 			alt="homme en costume" 
 			loading="lazy">
-			
+			<!-- <img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"/> -->
 
 			<img data-gallery-tag="Entreprises" 
 			class="gallery-item" 
@@ -237,7 +230,7 @@
 					sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px" 
 					alt="femme qui rit" 
 					loading="lazy">
-			
+			<!-- <img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"/> -->
 			
 			<img data-gallery-tag="Entreprises" 
 			class="gallery-item" 
@@ -248,22 +241,22 @@
 			width="1200" height="800" 
 			sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px" alt="femme souriante" 
 			loading="lazy">
-			
+			<!-- <img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"/> -->
 			
 			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" srcset="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-480w.webp 480w, ./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-800w.webp 800w, ./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-1200w.webp 1200w" width="1200" height="800" sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px" alt="mains se rapprochant" loading="lazy">
-			
+			<!-- <img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"/> -->
 			
 			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" srcset="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-480w.webp 480w, ./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-800w.webp 800w, ./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-1200w.webp 1200w" width="1200" height="800" sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px" alt="homme en souffrance" loading="lazy">
-			
+			<!-- <img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"/> -->
 			
 			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" srcset="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-480w.webp 480w, ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-800w.webp 800w, ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-1200w.webp 1200w" width="1200" height="800" sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px" alt="mariés souriant" loading="lazy">
-			
+			<!-- <img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"/> -->
 			
 			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" srcset="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-480w.webp 480w, ./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-800w.webp 800w, ./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-1200w.webp 1200w" width="1200" height="800" sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px" alt="femme à lunettes" loading="lazy">
-			
+			<!-- <img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"/> -->
 			
 			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" srcset="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-480w.webp 480w, ./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-800w.webp 800w, ./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-1200w.webp 1200w" width="1200" height="800" sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px" alt="chanteur en concert" loading="lazy">
-			
+			<!-- <img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"/> -->
 			
 		</div>
 	</div>
@@ -282,7 +275,7 @@
 		<div class="service">
 			<div class="service__description">
 				<h3>Shooting photo</h3>
-				<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Aquitaine pour réaliser vos photos</p>
+				<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
 			</div>
 			<div class="service__price">
 				<h4>350€/demi journée</h4>
@@ -347,13 +340,15 @@
 			alt="appareil photo fin années 80"
 			loading="lazy"
 			>
-			
+			<!-- <img 
+			src="./assets/images/camera.webp" 
+			loading="lazy"> -->
 		</div>
 	</div>
 </div>
 <footer>
 	<h2 class="name">Où me trouver</h2>
-	<h3 class="coordonates">68 avenue Alsace-Lorraine, 33200 Bordeaux. Tel: 05 56 67 78 89</h3>
+	<h3 class="coordonates">12 rue de la Paix, 75001 Paris. Tel: 01 75 01 02 03</h3>
 	<div class="nav">   
 		<ul>
 			<li><a class="social-link" href="https://www.facebook.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/facebook.svg" alt="logo facebook" loading="lazy" width="30" height="30"></a></li>
